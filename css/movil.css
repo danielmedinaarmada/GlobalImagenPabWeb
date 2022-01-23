@@ -3,6 +3,9 @@
   --blue: #0090dd;
   --second_nivel: #000000;
   --third_nivel: #adaeb1;
+  --fs_fn: 1.2rem;
+  --fs_sn: 1.5rem;
+  --fs_tn: 2rem;
 }
 
 * {
@@ -28,65 +31,70 @@ header {
   width: 100%;
   height: 70px;
   margin: 0 auto;
+  display: inline;
+  color: var(--blue);
 }
 
-.header-title__container {
+.header__menu {
   width: 90%;
-  min-width: 200px;
-  position: relative;
   padding: 1rem 0;
   margin: 0 auto;
+  min-width: 200px;
 }
 
-.header-title__ico {
-  color: var(--blue);
-  font-size: 4rem;
-  width: 40px;
+.header_list {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
 }
 
-.header-logo__container{
-  height: 100%;
-  display: inline;
-  font-size: 1.2rem;
-  color: var(--third_nivel);
-}
-
-.header-logo__container img {
-  width: 100px;
-}
-
-.header-logo__container p {
-  position: absolute;
-  left: 50px;
-  
-}
-
-.header_menu__container {
-  padding: 2.5rem 3rem;
-  width: 300px;
-  min-width: 320px;
+.header_item {
   display: none; 
-}
-
-.header_menu__item {
   padding: 1rem 0;
   white-space: nowrap;
   width: 100%;
   text-align: left;
+  order: 3; 
 }
 
-.header_menu__item a {
-  padding: 1rem;
-  color: var(--second_nivel);
-  font-size: 1.5rem;
+.header_item a {
+  padding: 1rem 0.5rem;
+  color: var(--third_nivel);
+  font-size: var(--fs_sn);
   font-family: "Inter", sans-serif;
 }
 
-.header_menu__item a:hover {
+.header_item a:hover {
   border: 1px solid var(--blue);
   border-radius: 25px;
   background-color: var(--blue);
   color: var(--first-nivel);
+}
+
+.header_item__logo {
+  display: flex;
+  order: 2;
+  flex-direction: column;
+  font-size: var(--fs_fn);
+  color: var(--third_nivel);
+  align-items: flex-end;
+}
+
+.header_item__logo img {
+  width: 150px;
+}
+
+
+.header_item__logo p {
+  font-size: var(--fs_sn);
+}
+
+.header_item--toogle { 
+  order: 1;
+}
+
+.header_list .material-icons {
+  font-size: 48px;
 }
 
 main {
@@ -96,33 +104,42 @@ main {
 
 .main-contact{
   width: 100%;
-  height: auto;
+  height: 100%;
+  margin:0 auto;
   background-image: url("../img/img-03-preset-5.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .main-contact--title {
   position: relative;
-  width: 50%;
-  height: auto;
-  min-width: 235px;
-  max-width: 500px;
+  width: calc(100vw - 50%);
+  height: 100%;
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(0,144, 221, .7);
 }
 
 .main--title {
   width: 90%;
-  height: auto;
+  height: auto%;
   padding: .5rem;
   margin: 0 auto;
 }
 
+.main--title__line{
+  width: 100%;
+  border-bottom: 1px solid var(--third_nivel);
+  margin: 1rem;
+}
+
 .main--title h1 {
   color: var(--first-nivel);
-  font-size: 1.8rem;
+  font-size: var(--fs_tn);
   padding: 1rem 0;
   text-align: center;
 }
@@ -137,28 +154,61 @@ main {
 .main-contact li {
   text-align: center;
   color:var(--first-nivel);
-  font-size: 1.2rem;
+  font-size: var(--fs_sn);
   line-height: 2rem;
-  padding: 0.5em 0;
+  padding: 1rem 0;
 } 
 
-.main-contact--title a {
+.main-contact a {
   position: absolute;
   display: inline-block;
-  width: 180px;
-  height:2.5rem;
+  width: 260px;
+  height:5rem;
   line-height: 5rem;
-  font-size: 1.2rem;
+  font-size: var(--fs_sn);
+  padding: 0 1.5rem;
   color: var(--first-nivel);
   border-radius: 25px;
   background-color: #adaeb1;
   text-align: center;
-  left: calc(50% - 85px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.46);
+  left: calc(50% - 85px);
+  bottom: -3.5rem;
 }
 
-.main-contact--title a span {
+.main-contact a span {
   display: inline-block;
-  width: 13px;
-  height: 8px;
+  width: 2rem;
+  height: 5rem;
+  vertical-align: -32%;
+}
+
+.main-organization {
+  width:100;
+  height: 60%;
+}
+
+.main-organization__container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main-organization__title {
+  color: var(--blue);
+  font-size: var(--fs_tn);
+  padding-bottom: 2rem;
+}
+
+.main-organization__line {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--third_nivel);
+}
+
+.main-organization__text {
+  padding-top: 2rem;
+  color: var(--third_nivel);
+  font-size: var(--fs_sn);
+  text-align:justify;
 }
