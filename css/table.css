@@ -1,6 +1,18 @@
 .main-contact{
   background-image: url("../img/img-03-preset-5_768.jpg");
 }
+
+
+.main--title h1 {
+  font-size: var(--fs_fo);
+}
+
+.main-contact li {
+  font-size: var(--fs_tn);
+  padding: 2rem 0;
+} 
+
+
 .footer-organization {
   display: flex;
   justify-content: space-between;
