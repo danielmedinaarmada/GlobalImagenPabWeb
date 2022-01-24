@@ -1,0 +1,12 @@
+.main-contact{
+  background-image: url("../img/img-03-preset-5_768.jpg");
+}
+.footer-organization {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.footer-ubicacion {
+  width: 400px;
+}

@@ -106,7 +106,7 @@ main {
   width: 100%;
   height: calc(100vh - 70px);
   margin:0 auto;
-  background-image: url("../img/img-03-preset-5.jpg");
+  background-image: url("../img/img-03-preset-5_320.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ main {
 .main-organization__container{
   width: 90%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .main-organization__title {
@@ -214,65 +214,40 @@ main {
   text-align:justify;
 }
 
-
-
 footer {
-  display: flex;
-  align-items: center;
   width: 100%;
-  height: 20rem;
-  background-color: #0c0e0d;
+  height: auto;
+  background-color: #333333;
+  padding: 2rem 0;
+  color: var(--third_nivel);
+  font-size: var(--fs_sn);
+}
+
+footer span {
+  color: var(--first-nivel);
+}
+
+footer a {
+  color: var(--third_nivel);
+  font-size: var(--fs_sn);
+}
+
+footer h3 {
+  font-size: var(--fs_tn);
+  padding-bottom: 1rem;
+  color: var(--first-nivel);
 }
 
 .footer-organization {
   width: 90%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  min-width: 255px;
-  max-width: 900px;
-  margin: 2rem auto;
-
+  margin: 0 auto;
 }
 
-.footer-organization h3 {
-  color: var(--first-nivel);
-  font-size: var(--fs_tn);
-  padding: 1rem 0;
+.footer-ubicacion {
+  padding-bottom: 2rem;
 }
 
-
-.footer-organization p {
-  color: var(--third_nivel);
-  font-size: var(--fs_sn);
+.footer-ubicacion p {
   padding-bottom: 1rem;
-
 }
 
-.footer-organization span{
-  color: var(--third_nivel);
-  font-size: var(--fs_sn);
-}
-
-
-.footer-organization a {
-  color: var(--first-nivel);
-  font-size: var(--fs_sn);
-}
-  
-.footer-ubicacion{
-  width: 50rem;
-  min-width: 23rem;
-  max-width: 60rem;
-  padding: .5rem;
-}
-
-
-
-
-.footer-compania{
-  width: 30rem;
-  min-width: 23rem;
-  max-width: 60rem;;
-  padding: .5rem;
-}
