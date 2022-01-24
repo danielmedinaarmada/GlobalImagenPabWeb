@@ -226,11 +226,15 @@ footer {
 
 footer span {
   color: var(--first-nivel);
+  padding: 1rem 0;
+  padding-right: 1rem;
 }
 
 footer a {
   color: var(--third_nivel);
   font-size: var(--fs_sn);
+  display: flex;
+  align-items: center;
 }
 
 footer h3 {
