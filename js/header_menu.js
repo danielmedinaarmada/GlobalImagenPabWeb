@@ -1,41 +1,47 @@
-var menus = document.getElementById("menu");
+var menus = document.getElementById("menus");
+var conocenos = document.getElementById("conocenos");
+var ventajas = document.getElementById("ventajas");
+var responsabilidad = document.getElementById("responsabilidad");
+var contacto = document.getElementById("contacto");
 
+menus.addEventListener("click", validarClase, true);
+conocenos.addEventListener("click", validarClase2, true);
+ventajas.addEventListener("click", validarClase2, true);
+responsabilidad.addEventListener("click", validarClase2, true);
+contacto.addEventListener("click", validarClase2, true);
 
-var conocenos =  document.getElementById("conocenos")
-var servicios =  document.getElementById("servicios")
-var ventajas =  document.getElementById("ventajas")
-var responsabilidad =  document.getElementById("responsabilidad")
-
-// console.log(img);
-menus.addEventListener("click", validarClase)
-logo.addEventListener("click", validarClase)
-casa.addEventListener("click", validarClase2)
-actores.addEventListener("click", validarClase2)
-argumentos.addEventListener("click", validarClase2)
-download.addEventListener("click", validarClase2)
-usuario.addEventListener("click", validarClase2)
-registro.addEventListener("click", validarClase2)
-
-function validarClase(menus){
+function validarClase() {
   var list = document.getElementsByName("nombre")[0].children;
-  for(let i=0; i<list.length; i++){
-    if(list[i].className.includes("header__item--active")){
-      list[i].classList.remove("header__item--active");
-      img.setAttribute('src', './img/menu.svg');
-    }else{
-      list[i].classList.add("header__item--active");
-      img.setAttribute('src', './img/close.svg');
+
+  if (menus.className.includes("fa-bars")) {
+    console.log("menu");
+    menus.classList.remove("fa-bars");
+    menus.classList.add('fa-times');
+  } else {
+    console.log("close");
+    menus.classList.remove("fa-times");
+    menus.classList.add('fa-bars');
+  }
+
+  for (let i = 1; i < list.length; i++) {
+    if (list[i].className.includes("header_item--active")) {
+      list[i].classList.remove("header_item--active");
+    } else {
+      list[i].classList.add("header_item--active");
     }
   }
 }
 
-
-function validarClase2(menus){
+function validarClase2() {
   var list = document.getElementsByName("nombre")[0].children;
-  for(let i=0; i<list.length; i++){
-    if(list[i].className.includes("header__item--active")){
-      list[i].classList.add("header__item--active");
-      img.setAttribute('src', './img/close.svg');
+  console.log("list", list);
+  for (let i = 1; i < list.length; i++) {
+    if (list[i].className.includes("header__item--active")) {
+      console.log("entre");
+      console.log("list[i].className", list[i].className);
+      list[i].classList.remove("header__item--active");
+      menus.classList.remove("fa-times");
+      menus.classList.add('fa-bars');
     }
   }
 }

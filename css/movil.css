@@ -34,9 +34,13 @@ header {
   margin: 0 auto;
   display: inline;
   color: var(--blue);
+  border-bottom: 1px solid var(--first-nivel);
 }
 
 .header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   padding: 1rem 0;
   margin: 0 auto;
@@ -45,8 +49,9 @@ header {
 
 .header_list {
   display: flex;
-  align-items: center;
-  gap: 0 1rem;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .header_item {
@@ -54,8 +59,7 @@ header {
   padding: 1rem 0;
   white-space: nowrap;
   width: 100%;
-  text-align: left;
-  order: 3; 
+  text-align: center;
 }
 
 .header_item a {
@@ -72,31 +76,40 @@ header {
   color: var(--first-nivel);
 }
 
-.header_item__logo {
+.header_logo_container{
   display: flex;
-  order: 2;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: flex;
   flex-direction: column;
   font-size: var(--fs_fn);
   color: var(--third_nivel);
-  align-items: flex-end;
 }
 
-.header_item__logo img {
+.header_logo img {
   width: 150px;
 }
 
-
-.header_item__logo p {
+.header_logo p {
   font-size: var(--fs_sn);
 }
 
 .header_item--toogle { 
-  order: 1;
   font-size: var(--fs_fo);
+  color: var(--blue);
+  width: 50px;
+  height: 50px;
+  text-align: end;
 }
 
-.header_list .material-icons {
-  font-size: 48px;
+.header_item--active {
+  display: block;
+}
+
+.fas {
+  width: 26px;
 }
 
 main {
@@ -105,6 +118,7 @@ main {
 }
 
 .main-contact{
+  position: relative;
   width: 100%;
   height: calc(100vh - 70px);
   margin:0 auto;
@@ -116,10 +130,9 @@ main {
 }
 
 .main-contact--title {
-  position: relative;
+  display: flex;
   width: calc(100vw - 50%);
   height: 100%;
-  display: flex;
   padding: 1rem 0;
   flex-direction: column;
   justify-content: center;
@@ -174,8 +187,8 @@ main {
   background-color: #adaeb1;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.46);
-  left: calc(50% - 85px);
-  bottom: -3.5rem;
+  left: calc(50% - 130px);
+  bottom: -25px;
 }
 
 .main-contact a span {

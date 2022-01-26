@@ -1,7 +1,22 @@
+.header_item--toogle{
+  display: none;
+}
+
+.header_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.header_item {
+  display: block; 
+}
+
 .main-contact{
   background-image: url("../img/img-03-preset-5_768.jpg");
 }
-
 
 .main--title h1 {
   font-size: var(--fs_fo);
@@ -11,7 +26,6 @@
   font-size: var(--fs_tn);
   padding: 2rem 0;
 } 
-
 
 .footer-organization {
   display: flex;
