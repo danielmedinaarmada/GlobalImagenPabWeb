@@ -11,13 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
   <link rel="shortcut icon" href="./img/icoGlobal.png" type="image/x-icon">
-  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-  
   <link rel="stylesheet" href="./css/movil.css">
   <link rel="stylesheet" href="./css/table.css" media="screen and (min-width:768px)">
   <link rel="stylesheet" href="./css/ordenador.css" media= "screen and (min-width:1024px)">
@@ -26,41 +21,78 @@
   <header>
     <nav class="header__menu">
       <ul name="nombre" class="header_list">
-        <li class="header_item__logo">
-            <img src="./img/Logo.svg" alt="Logo Global Imagen">
+        <li class="header_logo_container">
+          <div class="header_logo">
+            <a href="/"><img src="./img/Logo.svg" alt="Logo Global Imagen"></a>
             <p>Contact Center</p>
           </div>
+          <span class="header_item--toogle"><i id="menus" class="fas fa-bars"></i></span>
         </li>
         <li id="conocenos" class="header_item"><a href="#">Conócenos</a></li>
-        <li id="servicios" class="header_item"><a href="#">Servicios</a></li>
         <li id="ventajas" class="header_item"><a href="#">Ventajas Competitivas</a></li>
         <li id="responsabilidad" class="header_item"><a href="#">Responsabilidad Social</a></li>
         <li id="contacto" class="header_item"><a href="#">Contacto</a></li>
-        <li class="header_item--toogle"><i class="fas fa-bars header-_item_ico"></i></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="main-conocenos">
       <div class="main-conocenos--title">
-        <div class="main--title">
-          <h1>Conoce nuestros servicios.</h1>
+          <h1>Conocenos.</h1>
           <div class="main--title__line"></div>
-          <p>Contamos con una innovadora estructura de Contact Center, que incluye una variedad de canales de atención y un capital humano altamente capacitado para llevar a cabo los procesos de su empresa, con el fin de mejorar la experiencia del usuario final.</p>
-        </div>
-      </div>
-      <a href="#">Contáctate con nosotros.<span class="material-icons">chevron_right</span></a> 
-    </section>
-    
-    <section class="main-servicios">
-      <div class="main-servicios__container">
-        <div class="main-servicio">
-
-          
-        </div>
-
+          <ul>
+            <li>Contamos con una innovadora estructura de Contact Center, que incluye una variedad de canales de atención y un capital humano altamente capacitado para llevar a cabo los procesos de su empresa:</li>
+          </ul>
       </div>
     </section>
+    <section class="canales-containter">
+      <div class="canal-container">
+        <article class="canal"> 
+          <h3>Atención al cliente</h3>
+          <p>Nuestra atención a sus clientes será el mejor aliado para lograr sus objetivos de empresa.</p>
+          <p>Establecemos las mejores relaciones con un trato cercano, humano y cordial</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>  
+        <article class="canal"> 
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i>
+          <h3>Ventas</h3>
+          <p>Lo apoyamos en la oferta calificada de productos y servicios a lo largo del ciclo de vida de sus consumidores.</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>  
+        <article class="canal"> 
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i>
+          <h3>Back office</h3>
+          <p>Realizamos estudios, gestión, control y automatización de procesos críticos.</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>  
+        <article class="canal"> 
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i>
+          <h3>Cobranza</h3>
+          <p>Le ofrecemos el soporte en cobranzas con la actualización durante el ciclo de crédito y en todos los niveles de atrasos, con el cuidado de mantener a sus clientes activos y leales.</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>  
+        <article class="canal"> 
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i>
+          <h3>Soporte técnico</h3>
+          <p>Soporte en el diagnostico, a través del contacto en primer y segundo nivel, análisis y solución de problemas técnicos.</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>
+        <article class="canal"> 
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i>
+          <h3>Gestión de reclamos</h3>
+          <p>Cuando se trata de atender las demandas de los usuarios, la gestión de reclamos le brindará apoyo centralizado y actuación proactiva, preventiva y de solución.</p>
+          <i class="fas fa-chevron-circle-right canal-icon-rigth"></i>
+        </article>  
+        <article class="canal">
+          <i class="fas fa-chevron-circle-left canal-icon-left"></i> 
+          <h3>Estudios de mercado</h3>
+          <p>Contamos con un equipo especializado en realizar estudios de satisfacción de clientes, usuarios finales y empleados, lo que puede convertirseen un valor agrgado para su negocio.</p>
+        </article>  
+        
+      </div>
+      
+  </section>
+ 
   </main>
 
   <footer>
@@ -79,5 +111,6 @@
     </section>
   </footer>
 
+  <script src="./js/header_menu.js"></script>
 </body>
 </html>

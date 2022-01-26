@@ -18,6 +18,10 @@
   background-image: url("../img/img-03-preset-5_768.jpg");
 }
 
+.main-conocenos{
+  background-image: url("../img/img-showcase1F_768.jpg");
+}
+
 .main--title h1 {
   font-size: var(--fs_fo);
 }
