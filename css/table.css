@@ -35,6 +35,13 @@
   padding: 2rem 0;
 } 
 
+
+.main-responsabilidad_video {
+  width: 700px;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
 .canal-container {
   display: flex;
   flex-wrap: wrap;

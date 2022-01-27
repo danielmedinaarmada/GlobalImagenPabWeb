@@ -333,6 +333,66 @@ main {
   margin-bottom: 1rem;
 }
 
+.main-responsabilidad-contenedor{
+  margin-bottom: 2rem;
+}
+
+.main-responsabilidad{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.main-responsabilidad_video {
+  width: 300px;
+  height: 170px;
+  margin-bottom: 2rem;
+}
+
+.main-responsabilidad-textos {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-responsabilidad-textos h3 {
+  color: var(--blue);
+  font-size: var(--fs_tn);
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main-responsabilidad-video {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-responsabilidad-textos h4 {
+  color: var(--third_nivel);
+  text-decoration: underline;
+  font-size: var(--fs_tn);
+  padding: 1rem 0;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.main-responsabilidad-textos p {
+  text-align: justify;
+  color:var(--third_nivel);
+  font-size: var(--fs_sn);
+  line-height: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.main-responsabilidad-textos li {
+  color: var(--third_nivel);
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: var(--fs_sn);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
 .canales-containter{
   width: 100%;
 }
