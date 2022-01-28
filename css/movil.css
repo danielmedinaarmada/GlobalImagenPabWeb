@@ -259,6 +259,17 @@ main {
   font-size: var(--fs_tn);
 }
 
+.contacto-textos a {
+  color: var(--third_nivel);
+  font-size: var(--fs_tn);
+}
+
+
+.contacto-textos a span {
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+}
+
 /* daa */
 
 
